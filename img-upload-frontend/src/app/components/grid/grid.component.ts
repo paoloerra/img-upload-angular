@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Observable } from 'rxjs';
 import { UploadFileService } from 'src/app/services/upload-file.service';
+
 
 @Component({
   selector: 'app-grid',
@@ -28,6 +28,4 @@ export class GridComponent implements OnInit {
     }
     this.uploadService.getFiles().subscribe(onsucces,onerror);  
   }
-
-  
 }
